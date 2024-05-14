@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Iot Car</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./../../assets/img/car icono.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Mi Sitio
+      </a>
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="row ">
+      <div class="col text-center text-light">
+        <h1>Control de Navegación</h1>
+        <br>
+        <!-- Botones -->
+        <button id="Adelante" type="button" class="btn btn-outline-light h-50 w-40">- Adelante -</button> <br> <br>
+        <button id="Izquierda" type="button" class="btn btn-outline-light me-2 h-50 w-40">-- Izquierda --</button> 
+        <button id="Detener" type="button" class="btn btn-outline-danger me-2 h-50 w-40">||| Detener |||</button>
+        <button id="Derecha" type="button" class="btn btn-outline-light me-2 h-50 w-40">-- Derecha --</button><br> <br>
+        <button id="Atras" type="button" class="btn btn-outline-light h-50 w-10">--- Atrás ---</button>  <br> <br>
+        <span id="Mensaje">Respuesta: Esperando...</span>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>Derechos Reservados &copy; 2024</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
